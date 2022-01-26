@@ -1,0 +1,73 @@
+@import 'mixin';
+
+.container-banner {
+  @include flexCenter(50vh, 100vw);
+  align-items: center;
+  position: relative;
+  &::before {
+    @include backgroundImage('/img/pexels-pixabay-416778.jpg');
+    content: ' ';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0.9;
+    filter: brightness(0.8);
+    z-index: -1;
+  }
+
+  .left-side {
+    @include flexCenter(100%, 70%);
+    align-items: center;
+    .banner-text {
+      @include flexCenter(20vh, 60%);
+      align-items: center;
+      margin: 0.3%;
+      h1 {
+        color: white;
+        text-align: left;
+        font-size: 4vw;
+        span {
+          color: $yellowBackground;
+        }
+      }
+    }
+    .banner-price {
+      @include flexCenter(12vw, 12vw);
+      @include lemonStyle(2px);
+      margin-right: 4rem;
+      font-weight: bolder;
+      .column-one {
+        font-size: 3.2vw;
+      }
+      .column-two {
+        font-size: 1.4vw;
+      }
+    }
+  }
+  .right-side {
+    @include flexCenter(50%, 30%);
+    align-items: flex-end;
+    justify-content: start;
+    .banner-logo {
+      @include flexCenter(6vw, 6vw);
+      @include lemonStyle(5px);
+      margin-bottom: 10vw;
+      h5 {
+        font-size: 1vw;
+      }
+    }
+    .banner-btn {
+      @include flexCenter(6vw, 10vw);
+      align-items: flex-end;
+      button {
+        background: rgba(236, 101, 38, 0.938);
+        color: white;
+        width: 100%;
+        height: 100%;
+        font-size: 1vw;
+        font-weight: bolder;
+        border: none;
+      }
+    }
+  }
+}

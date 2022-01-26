@@ -1,16 +1,6 @@
 @import 'var';
-@mixin flexCenter($height) {
-  display: flex;
-  align-content: center;
-  justify-content: center;
-  height: $height;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+@import 'banner';
+@import 'mixin';
 
 .container {
   h3 {
@@ -18,11 +8,11 @@
     text-align: center;
   }
   .container-image {
-    @include flexCenter(50vh);
+    @include flexCenter(50vh, none);
     flex-wrap: wrap;
 
     div {
-      @include flexCenter(30%);
+      @include flexCenter(40%, none);
       width: $widthThreeColumn;
       margin: 0.3%;
       img {
