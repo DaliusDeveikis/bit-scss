@@ -5,10 +5,7 @@
         "style.scss",
         "_var.scss",
         "_banner.scss",
-        "_mixin.scss",
-        "_var.scss",
-        "_mixin.scss",
-        "_var.scss"
+        "_mixin.scss"
     ],
     "names": [],
     "file": "style.css"
