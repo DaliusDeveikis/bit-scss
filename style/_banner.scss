@@ -5,7 +5,8 @@
   align-items: center;
   position: relative;
   &::before {
-    @include backgroundImage('/img/pexels-pixabay-416778.jpg');
+    @include backgroundImageCenter;
+    background-image: url('../img/pexels-pixabay-416778.jpg');
     content: ' ';
     position: absolute;
     width: 100%;

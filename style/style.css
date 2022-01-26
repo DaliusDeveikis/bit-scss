@@ -16,10 +16,10 @@
 }
 
 .container-banner::before {
-  background-image: url("/img/pexels-pixabay-416778.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  background-image: url("../img/pexels-pixabay-416778.jpg");
   content: ' ';
   position: absolute;
   width: 100%;
